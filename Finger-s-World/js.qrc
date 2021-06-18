@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Js/GameBeginViewManager.js</file>
+        <file>Js/GameAmusementViewManager.js</file>
+        <file>Js/ToolFunc.js</file>
+    </qresource>
+</RCC>

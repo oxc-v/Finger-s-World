@@ -1,0 +1,21 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Images/Background/background-1.png</file>
+        <file>Images/GameTitle/title.png</file>
+        <file>Images/Cloud/cloud1.png</file>
+        <file>Images/Cloud/cloud2.png</file>
+        <file>Images/Cloud/cloud3.png</file>
+        <file>Images/Cloud/cloud4.png</file>
+        <file>Images/Cloud/cloud5.png</file>
+        <file>Images/Cloud/cloud6.png</file>
+        <file>Images/Cloud/cloud7.png</file>
+        <file>Images/Cloud/cloud8.png</file>
+        <file>Images/GameTitle/title2.png</file>
+        <file>Images/Background/background-2.png</file>
+        <file>Images/Background/background-3.png</file>
+        <file>Images/Heart/heart.png</file>
+        <file>Images/Icon/stop.png</file>
+        <file>Images/GameTitle/title3.png</file>
+        <file>Images/GameTitle/title4.png</file>
+    </qresource>
+</RCC>

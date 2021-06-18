@@ -1,5 +1,16 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
+        <file>Components/Dialogs/GameModelSelectDialog.qml</file>
+        <file>Components/Buttons/GameButton.qml</file>
+        <file>Components/Cloud/WhiteCloud.qml</file>
+        <file>Components/Dialogs/AmusementModelSelectDialog.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>Components/Buttons/GameRadioButton.qml</file>
+        <file>Views/GameBeginView.qml</file>
+        <file>Views/GameAmusementView.qml</file>
+        <file>Components/Word/Word.qml</file>
+        <file>Components/Dialogs/GameAmusementDialogs.qml</file>
+        <file>Views/GameAmusementScoreView.qml</file>
     </qresource>
 </RCC>
