@@ -17,5 +17,6 @@
         <file>Images/Icon/stop.png</file>
         <file>Images/GameTitle/title3.png</file>
         <file>Images/GameTitle/title4.png</file>
+        <file>Images/Icon/green.png</file>
     </qresource>
 </RCC>

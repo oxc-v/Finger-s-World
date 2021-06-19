@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Particles
 
 Item {
     id: word_item
@@ -13,9 +14,14 @@ Item {
     property alias duration: animation.duration
 
     /// 开始销毁组件
-    function startDestroyComponent() { scale.start() }
+    function startDestroyComponent() {
+        rec.opacity = 0
+        burstEmitter.burst(100)
+        timer.start()
+    }
 
     Rectangle {
+        id: rec
         anchors.fill: parent
         radius: parent.width / 2
         color: "#23bf76"
@@ -38,17 +44,41 @@ Item {
         duration: 6000
     }
 
-    /// 组件销毁动画
-    NumberAnimation {
-        id: scale
-        target: word_item
-        property: "scale"
-        from: 1
-        to: 0
-        duration: 300
-        easing.type: Easing.InOutBack
+    /// 组件销毁特效
+    ParticleSystem {
+        id: particles
+        anchors.fill: parent
 
-        onFinished: word_item.destroy()
+        ImageParticle {
+            id: imageParticle
+            groups: ["stage"]
+            source: "qrc:/Images/Icon/green.png"
+            entryEffect: ImageParticle.Scale
+            rotation: 60
+            rotationVariation: 30
+            rotationVelocity: 45
+            rotationVelocityVariation: 15
+        }
+
+        /// 粒子发射器
+        Emitter {
+            id: burstEmitter
+            anchors.centerIn: parent
+            group: "stage"
+            lifeSpan: 1000
+            size: 50; endSize: 15; sizeVariation:10
+            enabled: false
+            velocity: CumulativeDirection {
+                AngleDirection {angleVariation: 360; magnitudeVariation: 360;}
+            }
+        }
+    }
+
+    /// 销毁组件
+    Timer {
+        id: timer
+        interval: 1000
+        onTriggered: word_item.destroy()
     }
 
     /// 当组件超出屏幕时销毁组件

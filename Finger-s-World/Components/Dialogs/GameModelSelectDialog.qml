@@ -10,7 +10,7 @@ Item {
     id: dialog
     implicitHeight: 600
     implicitWidth: 550
-    y: Screen.height
+    y: -Screen.height
     x: Screen.width / 2.0 - width / 2.0
 
     property Window window
