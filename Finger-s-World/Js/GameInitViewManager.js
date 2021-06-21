@@ -15,7 +15,7 @@ function createWhiteCloud()
                      "qrc:/Images/Cloud/cloud5.png", "qrc:/Images/Cloud/cloud6.png",
                      "qrc:/Images/Cloud/cloud7.png", "qrc:/Images/Cloud/cloud8.png"
                     ]
-    createComponent("qrc:/Components/Cloud/WhiteCloud.qml",
+    createComponent("qrc:/Components/Cloud/GameCloud.qml",
                      begin,
                      {y: cloudYs[randomNum(0, 2)],
                       source: cloudUrls[randomNum(0, 7)]
@@ -24,36 +24,36 @@ function createWhiteCloud()
 }
 
 /// 创建游戏模式对话框
-function createGameModelDialog()
+function createGameModeSelectView()
 {
-    var incubator = createComponent("qrc:/Components/Dialogs/GameModelSelectDialog.qml",
+    var incubator = createComponent("qrc:/Views/Init/GameModeSelectView.qml",
                         begin,
                         {window: window}
                     )
     if (incubator.status === Component.Ready) {
-        incubator.object.goAmusementView.connect(createAmusementModelDialog)
+        incubator.object.goEMView.connect(createEMPlayMethodView)
     } else {
         incubator.onStatusChanged = function(status) {
             if (status === Component.Ready) {
-                incubator.object.goAmusementView.connect(createAmusementModelDialog)
+                incubator.object.goEMView.connect(createEMPlayMethodView)
             }
         }
     }
 }
 
 /// 创建娱乐模式对话框
-function createAmusementModelDialog()
+function createEMPlayMethodView()
 {
-    var incubator = createComponent("qrc:/Components/Dialogs/AmusementModelSelectDialog.qml",
+    var incubator = createComponent("qrc:/Views/EntertainmentMode/EMPlayMethodView.qml",
                                     begin,
                                     {view: view}
                                    )
     if (incubator.status === Component.Ready) {
-        incubator.object.goGameModelView.connect(createGameModelDialog)
+        incubator.object.goGameModeSelectView.connect(createGameModeSelectView)
     } else {
         incubator.onStatusChanged = function(status) {
             if (status === Component.Ready) {
-                incubator.object.goGameModelView.connect(createGameModelDialog)
+                incubator.object.goGameModeSelectView.connect(createGameModeSelectView)
             }
         }
     }

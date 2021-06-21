@@ -2,9 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
-import "../Components/Dialogs"
-import "../Components/Cloud"
-import "../Js/GameBeginViewManager.js" as Manager
+import "../../Js/GameInitViewManager.js" as Manager
 
 Item {
     id: begin
@@ -29,5 +27,5 @@ Item {
     }
 
     /// 创建游戏模式选择对话框
-    Component.onCompleted: { Manager.createGameModelDialog() }
+    Component.onCompleted: { Manager.createGameModeSelectView() }
 }

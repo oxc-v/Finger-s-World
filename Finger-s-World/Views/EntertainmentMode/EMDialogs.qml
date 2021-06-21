@@ -3,7 +3,7 @@ import QtQuick.Controls
 import QtQuick.Window
 import QtQuick.Layouts
 
-import "../Buttons"
+import "../../Components/Buttons"
 
 Item {
     id: item
@@ -16,7 +16,7 @@ Item {
     signal continueGame
     signal againGame
 
-    function openPauseDialog() { pause.show(); pause_an.start() }
+    function openPauseDialog() { pause.show() }
     function openEndDialog() { end.show(); end_an.start() }
 
     /// 游戏暂停对话框
@@ -25,6 +25,7 @@ Item {
         height: 250
         width: 300
         x: Screen.width / 2 - pause.width / 2
+        y: Screen.height / 2 - pause.height / 2
         color: "transparent"
         modality: Qt.WindowModal
         flags: Qt.Dialog | Qt.FramelessWindowHint
@@ -69,21 +70,6 @@ Item {
                 }
             }
         }
-
-        /// 对话框的出场效果
-        ParallelAnimation {
-            id: pause_an
-            PropertyAction { target: pause; property: "y"; value: -pause.height}
-            NumberAnimation {
-                target: pause
-                property: "y"
-                to: Screen.height / 2.0 - pause.height / 2.0
-                easing.type: Easing.InOutBack
-                duration: 800
-            }
-        }
-
-        onVisibleChanged: activeFocus = true
     }
 
     /// 游戏结束对话框

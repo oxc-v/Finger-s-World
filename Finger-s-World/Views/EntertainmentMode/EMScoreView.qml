@@ -87,7 +87,7 @@ Item {
                             NumberAnimation {
                                 target: heart_1
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         },
@@ -97,7 +97,7 @@ Item {
                             NumberAnimation {
                                 target: heart_1
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }
@@ -124,7 +124,7 @@ Item {
                             NumberAnimation {
                                 target: heart_2
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         },
@@ -134,7 +134,7 @@ Item {
                             NumberAnimation {
                                 target: heart_2
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }
@@ -161,7 +161,7 @@ Item {
                             NumberAnimation {
                                 target: heart_3
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         },
@@ -171,7 +171,7 @@ Item {
                             NumberAnimation {
                                 target: heart_3
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }
@@ -198,7 +198,7 @@ Item {
                             NumberAnimation {
                                 target: heart_4
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         },
@@ -208,7 +208,7 @@ Item {
                             NumberAnimation {
                                 target: heart_4
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }
@@ -235,7 +235,7 @@ Item {
                             NumberAnimation {
                                 target: heart_5
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         },
@@ -245,7 +245,7 @@ Item {
                             NumberAnimation {
                                 target: heart_5
                                 property: "scale"
-                                duration: 500
+                                duration: 300
                                 easing.type: Easing.InOutBack
                             }
                         }

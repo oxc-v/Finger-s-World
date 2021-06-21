@@ -15,6 +15,7 @@ Item {
 
     /// 开始销毁组件
     function startDestroyComponent() {
+        animation.stop()
         rec.opacity = 0
         burstEmitter.burst(100)
         timer.start()
@@ -38,7 +39,7 @@ Item {
     }
 
     /// 组件下落动画
-    NumberAnimation on y {
+    YAnimator on y {
         id: animation
         to: Screen.height
         duration: 6000

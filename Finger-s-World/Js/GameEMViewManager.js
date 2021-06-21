@@ -53,7 +53,7 @@ function createComponent(view, parent, properties)
 /// 创建单词组件
 function createWord()
 {
-    var incubator = createComponent("qrc:/Components/Word/Word.qml",
+    var incubator = createComponent("qrc:/Views/EntertainmentMode/EMWordView.qml",
                         item,
                         {x: wordXs[randomNum(0, 7)],
                          text: getRandomWord(item.word_type),
@@ -82,7 +82,7 @@ function createWhiteCloud()
                      "qrc:/Images/Cloud/cloud5.png", "qrc:/Images/Cloud/cloud6.png",
                      "qrc:/Images/Cloud/cloud7.png", "qrc:/Images/Cloud/cloud8.png"
                     ]
-    createComponent("qrc:/Components/Cloud/WhiteCloud.qml",
+    createComponent("qrc:/Components/Cloud/GameCloud.qml",
                      item,
                      {y: cloudYs[randomNum(0, 2)],
                       source: cloudUrls[randomNum(0, 7)]

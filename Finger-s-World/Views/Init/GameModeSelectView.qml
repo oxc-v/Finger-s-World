@@ -14,7 +14,8 @@ Item {
     x: Screen.width / 2.0 - width / 2.0
 
     property Window window
-    signal goAmusementView
+
+    signal goEMView
 
     ColumnLayout {
         anchors.fill: parent
@@ -45,7 +46,7 @@ Item {
                 GameButton {
                     text: qsTr("娱乐模式")
                     onPressed: {
-                        dialog.goAmusementView()
+                        dialog.goEMView()
                         dialog.destroy()
                     }
                 }

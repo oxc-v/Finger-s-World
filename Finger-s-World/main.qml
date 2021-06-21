@@ -2,7 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Window
 
-import "./Views"
+import "./Views/Init"
 
 Window {
     id: window
@@ -13,7 +13,7 @@ Window {
     StackView {
         id: stack_view
         anchors.fill: parent
-        initialItem: GameBeginView { window: window; view: stack_view }
+        initialItem: InitView { window: window; view: stack_view }
 
         pushEnter: Transition {
             id: pushEnter

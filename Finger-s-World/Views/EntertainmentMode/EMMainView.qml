@@ -1,11 +1,9 @@
 import QtQuick
 import QtQuick.Controls
 
-import "../Components/Buttons"
-import "../Components/Dialogs"
-import "../Views"
-import "../Js/GameAmusementViewManager.js" as Manager
-import "../Js/ToolFunc.js" as ToolFunc
+import "../../Components/Buttons"
+import "../../Js/GameEMViewManager.js" as Manager
+import "../../Js/ToolFunc.js" as ToolFunc
 
 Item {
     id: item
@@ -114,7 +112,7 @@ Item {
     }
 
     /// 分数显示框
-    GameAmusementScoreView {
+    EMScoreView {
         id: amusement_score_dialog
         anchors.right: parent.right
         anchors.rightMargin: 50
@@ -134,7 +132,7 @@ Item {
         }
     }
 
-    GameAmusementDialogs {
+    EMDialogs {
         id: dialogs
         view: item.view
         score_txt: item.score

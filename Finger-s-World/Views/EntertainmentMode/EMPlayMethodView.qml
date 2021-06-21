@@ -5,7 +5,6 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import "../../Components/Buttons"
-import "../../Views"
 
 Item {
     id: dialog
@@ -23,7 +22,7 @@ Item {
     property string factor: factors[0]
     property string word_type: word_types[1]
 
-    signal goGameModelView
+    signal goGameModeSelectView
 
     ColumnLayout {
         anchors.fill: parent
@@ -100,7 +99,7 @@ Item {
                     GameButton {
                         text: qsTr("返回")
                         onPressed: {
-                            dialog.goGameModelView()
+                            dialog.goGameModeSelectView()
                             dialog.destroy()
                         }
                     }
@@ -116,7 +115,7 @@ Item {
     /// 娱乐模式界面
     Component {
         id: game_amusement_view
-        GameAmusementView {
+        EMMainView {
             view: dialog.view
             factor: dialog.factor
             word_type: dialog.word_type

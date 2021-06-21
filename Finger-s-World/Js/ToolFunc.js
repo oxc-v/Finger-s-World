@@ -7,13 +7,11 @@ function toTime(s){
         if(min < 10){
             time += "0";
         }
-        console.log(time)
         time += min + ":";
         if(sec < 10){
             time += "0";
         }
         time += sec.toFixed(0);
     }
-    console.log(time)
     return time;
 }

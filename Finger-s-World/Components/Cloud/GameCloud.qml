@@ -15,7 +15,7 @@ Item {
     }
 
     /// 组件水平向右移动
-    NumberAnimation on x {
+    XAnimator on x {
         to: Screen.width
         duration: 15000
     }
