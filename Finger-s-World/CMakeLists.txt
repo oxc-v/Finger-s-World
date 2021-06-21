@@ -29,9 +29,12 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Core Quick REQUIRED)
 
 set(PROJECT_SOURCES
         main.cpp
+        Cpp/File/file.h
+        Cpp/File/file.cpp
         qml.qrc
         image.qrc
         js.qrc
+        file.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

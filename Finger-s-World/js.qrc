@@ -3,5 +3,6 @@
         <file>Js/ToolFunc.js</file>
         <file>Js/GameEMViewManager.js</file>
         <file>Js/GameInitViewManager.js</file>
+        <file>Js/GameTMViewManager.js</file>
     </qresource>
 </RCC>

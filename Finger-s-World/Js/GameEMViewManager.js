@@ -3,7 +3,7 @@ var top_row_word = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"]
 var medium_row_word = ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'"]
 var buttom_row_word = ["z", "x", "c", "v", "b", "n", "m", ",", ".", "/"]
 var number = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
-var all_letter = top_row_word + medium_row_word + buttom_row_word + number
+var all_letter = top_row_word.concat(medium_row_word.concat(buttom_row_word))
 
 /// 单词类别
 var word_type = ["top", "medium", "buttom", "number", "all"]

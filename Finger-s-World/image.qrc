@@ -18,5 +18,65 @@
         <file>Images/GameTitle/title3.png</file>
         <file>Images/GameTitle/title4.png</file>
         <file>Images/Icon/green.png</file>
+        <file>Images/KeyImages/Capital/A.png</file>
+        <file>Images/KeyImages/Capital/B.png</file>
+        <file>Images/KeyImages/Capital/C.png</file>
+        <file>Images/KeyImages/Capital/D.png</file>
+        <file>Images/KeyImages/Capital/E.png</file>
+        <file>Images/KeyImages/Capital/F.png</file>
+        <file>Images/KeyImages/Capital/G.png</file>
+        <file>Images/KeyImages/Capital/H.png</file>
+        <file>Images/KeyImages/Capital/I.png</file>
+        <file>Images/KeyImages/Capital/J.png</file>
+        <file>Images/KeyImages/Capital/K.png</file>
+        <file>Images/KeyImages/Capital/L.png</file>
+        <file>Images/KeyImages/Capital/M.png</file>
+        <file>Images/KeyImages/Capital/N.png</file>
+        <file>Images/KeyImages/Capital/O.png</file>
+        <file>Images/KeyImages/Capital/P.png</file>
+        <file>Images/KeyImages/Capital/Q.png</file>
+        <file>Images/KeyImages/Capital/R.png</file>
+        <file>Images/KeyImages/Capital/S.png</file>
+        <file>Images/KeyImages/Capital/T.png</file>
+        <file>Images/KeyImages/Capital/U.png</file>
+        <file>Images/KeyImages/Capital/V.png</file>
+        <file>Images/KeyImages/Capital/W.png</file>
+        <file>Images/KeyImages/Capital/X.png</file>
+        <file>Images/KeyImages/Capital/Y.png</file>
+        <file>Images/KeyImages/Capital/Z.png</file>
+        <file>Images/KeyImages/LowerCase/a.png</file>
+        <file>Images/KeyImages/LowerCase/b.png</file>
+        <file>Images/KeyImages/LowerCase/c.png</file>
+        <file>Images/KeyImages/LowerCase/d.png</file>
+        <file>Images/KeyImages/LowerCase/e.png</file>
+        <file>Images/KeyImages/LowerCase/f.png</file>
+        <file>Images/KeyImages/LowerCase/g.png</file>
+        <file>Images/KeyImages/LowerCase/h.png</file>
+        <file>Images/KeyImages/LowerCase/i.png</file>
+        <file>Images/KeyImages/LowerCase/j.png</file>
+        <file>Images/KeyImages/LowerCase/k.png</file>
+        <file>Images/KeyImages/LowerCase/l.png</file>
+        <file>Images/KeyImages/LowerCase/m.png</file>
+        <file>Images/KeyImages/LowerCase/n.png</file>
+        <file>Images/KeyImages/LowerCase/o.png</file>
+        <file>Images/KeyImages/LowerCase/p.png</file>
+        <file>Images/KeyImages/LowerCase/q.png</file>
+        <file>Images/KeyImages/LowerCase/r.png</file>
+        <file>Images/KeyImages/LowerCase/s.png</file>
+        <file>Images/KeyImages/LowerCase/t.png</file>
+        <file>Images/KeyImages/LowerCase/u.png</file>
+        <file>Images/KeyImages/LowerCase/v.png</file>
+        <file>Images/KeyImages/LowerCase/w.png</file>
+        <file>Images/KeyImages/LowerCase/x.png</file>
+        <file>Images/KeyImages/LowerCase/y.png</file>
+        <file>Images/KeyImages/LowerCase/z.png</file>
+        <file>Images/Icon/goBack.png</file>
+        <file>Images/KeyImages/Other/comma.png</file>
+        <file>Images/KeyImages/Other/period.png</file>
+        <file>Images/KeyImages/Other/question.png</file>
+        <file>Images/KeyImages/Other/semicolon.png</file>
+        <file>Images/KeyImages/Other/singlequotes.png</file>
+        <file>Images/KeyImages/Other/slash.png</file>
+        <file>Images/KeyImages/Other/space.png</file>
     </qresource>
 </RCC>

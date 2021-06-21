@@ -12,5 +12,7 @@
         <file>Views/Init/GameModeSelectView.qml</file>
         <file>Views/Init/InitView.qml</file>
         <file>Components/Cloud/GameCloud.qml</file>
+        <file>Views/TeachingMode/TMMainView.qml</file>
+        <file>Views/TeachingMode/TMOverDialog.qml</file>
     </qresource>
 </RCC>

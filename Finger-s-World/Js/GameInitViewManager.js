@@ -28,7 +28,7 @@ function createGameModeSelectView()
 {
     var incubator = createComponent("qrc:/Views/Init/GameModeSelectView.qml",
                         begin,
-                        {window: window}
+                        {window: window, view: view}
                     )
     if (incubator.status === Component.Ready) {
         incubator.object.goEMView.connect(createEMPlayMethodView)

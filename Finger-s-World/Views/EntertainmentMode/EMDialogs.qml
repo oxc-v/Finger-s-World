@@ -1,6 +1,5 @@
 import QtQuick
 import QtQuick.Controls
-import QtQuick.Window
 import QtQuick.Layouts
 
 import "../../Components/Buttons"
@@ -16,19 +15,20 @@ Item {
     signal continueGame
     signal againGame
 
-    function openPauseDialog() { pause.show() }
-    function openEndDialog() { end.show(); end_an.start() }
+    function openPauseDialog() { pause.open() }
+    function openEndDialog() { end.open(); end_an.start() }
 
     /// 游戏暂停对话框
-    Window {
+    Dialog {
         id: pause
         height: 250
         width: 300
         x: Screen.width / 2 - pause.width / 2
         y: Screen.height / 2 - pause.height / 2
-        color: "transparent"
-        modality: Qt.WindowModal
-        flags: Qt.Dialog | Qt.FramelessWindowHint
+        modal: true
+        closePolicy: Popup.NoAutoClose
+
+        background: Rectangle { opacity: 0 }
 
         ColumnLayout {
             anchors.fill: parent
@@ -73,14 +73,14 @@ Item {
     }
 
     /// 游戏结束对话框
-    Window {
+    Dialog {
         id: end
         x: Screen.width / 2 - end.width / 2
         height: 400
         width: 300
-        color: "transparent"
-        modality: Qt.WindowModal
-        flags: Qt.Dialog | Qt.FramelessWindowHint
+        modal: true
+        closePolicy: Popup.NoAutoClose
+        background: Rectangle { opacity: 0 }
 
         ColumnLayout {
             anchors.fill: parent

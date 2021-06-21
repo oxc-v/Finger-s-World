@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/">
+        <file>WordLists/TeachingMode/list1.txt</file>
+    </qresource>
+</RCC>

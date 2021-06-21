@@ -39,7 +39,7 @@ Item {
     }
 
     /// 组件下落动画
-    YAnimator on y {
+    NumberAnimation on y {
         id: animation
         to: Screen.height
         duration: 6000

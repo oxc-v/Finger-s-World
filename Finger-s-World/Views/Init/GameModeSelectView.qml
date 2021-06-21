@@ -5,15 +5,17 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 import "../../Components/Buttons"
+import "../TeachingMode"
 
 Item {
     id: dialog
-    implicitHeight: 600
+    implicitHeight: 680
     implicitWidth: 550
     y: -Screen.height
     x: Screen.width / 2.0 - width / 2.0
 
     property Window window
+    property StackView view
 
     signal goEMView
 
@@ -42,9 +44,14 @@ Item {
                 anchors.centerIn: parent
                 spacing: 30
 
+                GameButton {
+                    text: qsTr("新手教学")
+                    onPressed: view.push(tmMainView)
+                }
                 GameButton { text: qsTr("练习模式")}
                 GameButton {
                     text: qsTr("娱乐模式")
+
                     onPressed: {
                         dialog.goEMView()
                         dialog.destroy()
@@ -57,6 +64,13 @@ Item {
                 }
             }
         }
+    }
+
+    /// 新手教学页面
+    Component {
+        id: tmMainView
+
+        TMMainView { view: dialog.view }
     }
 
     /// 对话框的出场效果
