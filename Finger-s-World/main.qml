@@ -36,5 +36,4 @@ Window {
             NumberAnimation { property: "y";  to: 0; duration: 600; easing.type: Easing.OutBack}
         }
     }
-
 }

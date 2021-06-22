@@ -4,5 +4,6 @@
         <file>Js/GameEMViewManager.js</file>
         <file>Js/GameInitViewManager.js</file>
         <file>Js/GameTMViewManager.js</file>
+        <file>Js/GamePMViewManager.js</file>
     </qresource>
 </RCC>

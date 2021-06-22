@@ -79,5 +79,6 @@
         <file>Images/KeyImages/Other/slash.png</file>
         <file>Images/KeyImages/Other/space.png</file>
         <file>Images/Icon/exit.png</file>
+        <file>Images/Icon/add.png</file>
     </qresource>
 </RCC>

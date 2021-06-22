@@ -2,6 +2,7 @@ import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
 
+import "../../Components/TextEidt"
 import "../../Js/GameTMViewManager.js" as Manager
 
 Item {
@@ -15,14 +16,18 @@ Item {
 
     ColumnLayout {
         anchors.fill: parent
-        anchors.margins: 10
+        anchors.margins: 20
 
         /// 返回按钮
         Button {
             id: btn
             Layout.alignment: Qt.AlignRight
+            Layout.preferredHeight: 50
             Layout.preferredWidth: 70
-            background: Rectangle { color: hover.hovered ? "#3395db" : "#23bf76"; radius: 5 }
+            background: Rectangle {
+                color: hover.hovered ? "#3395db" : "#23bf76"
+                radius: 10
+            }
             icon.source: "qrc:/Images/Icon/goBack.png"
             icon.color: "#ffffff"
 
@@ -31,58 +36,11 @@ Item {
         }
 
         /// 文本区域
-        Rectangle {
+        GameTextArea {
             id: textArea
             Layout.fillWidth: true
             Layout.preferredHeight: parent.height / 3 * 1.1
-            border.width: 2
-            border.color: "#99caed"
-            radius: 10
-
-            Flickable {
-                id: flick
-                anchors.fill: parent
-                anchors.margins: 10
-                contentWidth: parent.width
-                contentHeight: parent.height
-                clip: true
-
-                function ensureVisible(r)
-                {
-                    if (contentX >= r.x)
-                        contentX = r.x;
-                    else if (contentX+width <= r.x+r.width)
-                        contentX = r.x+r.width-width;
-                    if (contentY >= r.y)
-                        contentY = r.y;
-                    else if (contentY+height <= r.y+r.height)
-                        contentY = r.y+r.height-height;
-                }
-
-                TextEdit {
-                    id: textEdit
-                    width: flick.width
-                    text: tmMainview.text
-                    cursorVisible: true
-                    font.letterSpacing: 18
-                    font.wordSpacing: 2
-                    font.pointSize: 30
-                    readOnly: true
-                    clip: true
-                    selectionColor: "#23bf76"
-                    wrapMode: TextEdit.Wrap
-                    cursorDelegate: Rectangle {
-                        id: oxc
-                        height: 1
-                        opacity: 0.5
-                        width: 32
-                        radius: 5
-                        color: "#3395db"
-                    }
-
-                    onCursorRectangleChanged: flick.ensureVisible(cursorRectangle)
-                }
-            }
+            textEdit.text: tmMainview.text
         }
 
         /// 提示图片
@@ -102,23 +60,23 @@ Item {
 
         RotationAnimation {
             target: textArea
-            to: 5
-            duration: 80
+            to: 1
+            duration: 60
         }
         RotationAnimation {
             target: textArea
-            to: -5
-            duration: 80
+            to: -1
+            duration: 60
         }
         RotationAnimation {
             target: textArea
-            to: 5
-            duration: 80
+            to: 1
+            duration: 60
         }
         RotationAnimation {
             target: textArea
             to: 0
-            duration: 80
+            duration: 60
         }
 
         onFinished: textArea.border.color = "#99caed"
@@ -136,7 +94,7 @@ Item {
             dialog.openTMOverDialog()
         }
 
-        imageUrl = Manager.getImageUrl(textEdit.getText(index, index + 1))
+        imageUrl = Manager.getImageUrl(textArea.textEdit.getText(index, index + 1))
     }
 
     /// 组件初始化
@@ -144,15 +102,15 @@ Item {
         forceActiveFocus()
         tmMainview.text = load(":/WordLists/TeachingMode/list1.txt")
         dialog.initTMMainView.connect(Manager.initTMMainVeiw)
-        imageUrl = Manager.getImageUrl(textEdit.getText(0, 1))
+        imageUrl = Manager.getImageUrl(textArea.textEdit.getText(0, 1))
     }
 
     /// 监听键盘事件
     Keys.onPressed: (event) => {
-        if (event.text === textEdit.getText(index, index + 1)) {
+        if (event.text === textArea.textEdit.getText(index, index + 1)) {
             index++
-            textEdit.select(0, index)
-        } else if (event.key !== Qt.Key_Shift) {
+            textArea.textEdit.select(0, index)
+        } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {
             textArea.border.color = "red"
             shake.start()
         }

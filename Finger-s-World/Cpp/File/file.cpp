@@ -19,8 +19,16 @@ QString File::load(QUrl filePath)
         return QString();
 
     QTextStream in(&file);
-    in.setAutoDetectUnicode(true);
     QString text = in.readAll();
+
+    /// 检测中文字符
+    for(int i = 0; i < text.size(); i++) {
+        QChar ch = text.at(i);
+        ushort uNum = ch.unicode();
+        if(uNum >= 0x4E00 && uNum <= 0x9FA5)
+            return QString();
+    }
+
     file.close();
 
     return text;

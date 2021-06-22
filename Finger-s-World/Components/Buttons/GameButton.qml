@@ -7,9 +7,14 @@ Item {
 
     property alias text: txt.text
     property alias font: txt.font
+    property alias radius: rec.radius
+    property alias color: rec.color
+    property alias hovered: mouseHover.hovered
+
     signal pressed
 
     Rectangle {
+        id: rec
         anchors.fill: parent
         radius: parent.height / 2.0
         color: mouseHover.hovered ? "#ff9d20" : "#23bf76"

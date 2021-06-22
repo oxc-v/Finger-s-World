@@ -15,5 +15,8 @@
         <file>Views/TeachingMode/TMMainView.qml</file>
         <file>Views/TeachingMode/TMOverDialog.qml</file>
         <file>Views/EntertainmentMode/EMHeartView.qml</file>
+        <file>Views/PracticeMode/PMMainView.qml</file>
+        <file>Components/TextEidt/GameTextArea.qml</file>
+        <file>Views/PracticeMode/PMDialogs.qml</file>
     </qresource>
 </RCC>

@@ -6,6 +6,7 @@ import QtQuick.Layouts
 
 import "../../Components/Buttons"
 import "../TeachingMode"
+import "../PracticeMode"
 
 Item {
     id: dialog
@@ -48,10 +49,12 @@ Item {
                     text: qsTr("新手教学")
                     onPressed: view.push(tmMainView)
                 }
-                GameButton { text: qsTr("练习模式")}
+                GameButton {
+                    text: qsTr("练习模式")
+                    onPressed: view.push(pmMainView)
+                }
                 GameButton {
                     text: qsTr("娱乐模式")
-
                     onPressed: {
                         dialog.goEMView()
                         dialog.destroy()
@@ -69,8 +72,13 @@ Item {
     /// 新手教学页面
     Component {
         id: tmMainView
-
         TMMainView { view: dialog.view }
+    }
+
+    /// 练习模式页面
+    Component {
+        id: pmMainView
+        PMMainView { view: dialog.view }
     }
 
     /// 对话框的出场效果

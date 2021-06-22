@@ -70,10 +70,10 @@ function initTMMainVeiw()
 {
     /// 重置索引
     tmMainview.index = 0
-    textEdit.cursorPosition = 0
+    textArea.textEdit.cursorPosition = 0
 
     /// 清空Selection
-    textEdit.deselect()
+    textArea.textEdit.deselect()
 
     /// 捕获焦点
     tmMainview.forceActiveFocus()
