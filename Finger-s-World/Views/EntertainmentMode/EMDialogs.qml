@@ -20,9 +20,10 @@ Item {
     /// 游戏结束对话框
     Dialog {
         id: end
-        height: 400
-        width: 300
+        implicitHeight: 400
+        implicitWidth: 300
         x: Screen.width / 2 - end.width / 2
+        y: Screen.height
         modal: true
         closePolicy: Popup.NoAutoClose
         background: Rectangle { opacity: 0 }
@@ -30,10 +31,9 @@ Item {
         enter: Transition {
             NumberAnimation {
                 property: "y"
-                from: -400
-                to: Screen.height / 2.0 - end.height / 2.0
+                to: Screen.height / 2 - 400 / 2
                 easing.type: Easing.InOutBack
-                duration: 800
+                duration: 600
             }
         }
 

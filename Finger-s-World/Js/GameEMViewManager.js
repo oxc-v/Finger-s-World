@@ -125,7 +125,7 @@ function stopAllComponentAnimation()
     timer_word.stop()
     time.stop()
     for (const word of word_components)
-        word.object.ani.pause()
+        word.object.ani.stop()
 }
 
 /// 重启所有组件的动画
@@ -133,8 +133,6 @@ function restartAllComponentAnimation()
 {
     timer_word.start()
     time.start()
-    for (const word of word_components)
-        word.object.ani.resume()
 }
 
 /// 删除所有组件
