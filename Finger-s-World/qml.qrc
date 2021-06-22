@@ -14,5 +14,6 @@
         <file>Components/Cloud/GameCloud.qml</file>
         <file>Views/TeachingMode/TMMainView.qml</file>
         <file>Views/TeachingMode/TMOverDialog.qml</file>
+        <file>Views/EntertainmentMode/EMHeartView.qml</file>
     </qresource>
 </RCC>
