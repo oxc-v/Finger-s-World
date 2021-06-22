@@ -102,17 +102,17 @@ Item {
 
         RotationAnimation {
             target: textArea
-            to: 10
+            to: 5
             duration: 80
         }
         RotationAnimation {
             target: textArea
-            to: -10
+            to: -5
             duration: 80
         }
         RotationAnimation {
             target: textArea
-            to: 10
+            to: 5
             duration: 80
         }
         RotationAnimation {

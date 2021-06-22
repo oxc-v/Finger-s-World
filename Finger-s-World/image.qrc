@@ -78,5 +78,6 @@
         <file>Images/KeyImages/Other/singlequotes.png</file>
         <file>Images/KeyImages/Other/slash.png</file>
         <file>Images/KeyImages/Other/space.png</file>
+        <file>Images/Icon/exit.png</file>
     </qresource>
 </RCC>

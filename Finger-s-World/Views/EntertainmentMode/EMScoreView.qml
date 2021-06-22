@@ -9,10 +9,11 @@ Item {
     implicitWidth: 200
     y: -height
 
-    property alias pause_btn: pause_btn
     property alias score: bingo_word.text
     property int heart_number: hearts.length
     property var hearts: [heart_1, heart_2, heart_3, heart_4, heart_5]
+
+    property StackView view
 
     /// 隐藏心形图片
     function destroyHeart()
@@ -256,17 +257,17 @@ Item {
             RowLayout {
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignRight
-                Layout.margins: 5
                 Button {
                     id: pause_btn
                     background: Rectangle {opacity: 0}
-                    icon.source: "qrc:/Images/Icon/stop.png"
-                    icon.color: btn_hover.hovered ? "#23bf76" : "red"
+                    icon.source: "qrc:/Images/Icon/exit.png"
+                    icon.color: btn_hover.hovered ? "#23bf76" : "#f9a535"
                     icon.height: 40
                     icon.width: 40
                     scale: btn_hover.hovered ? 1.3 : 1
 
                     HoverHandler {id: btn_hover}
+                    onPressed: view.pop()
                 }
             }
         }

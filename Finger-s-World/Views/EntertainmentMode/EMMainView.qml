@@ -117,11 +117,7 @@ Item {
         anchors.right: parent.right
         anchors.rightMargin: 50
         score: item.score
-
-        pause_btn.onPressed: {
-            Manager.stopAllComponentAnimation()
-            dialogs.openPauseDialog()
-        }
+        view: item.view
 
         onHeart_numberChanged: {
             if (heart_number === 0) {
