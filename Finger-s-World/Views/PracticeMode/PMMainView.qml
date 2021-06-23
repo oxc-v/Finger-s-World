@@ -73,6 +73,7 @@ Item {
         finishAccuracy: (1 - errorNumbers / textArea.textEdit.text.length).toFixed(2) * 100 + "%"
 
         fileDialog.onAccepted: {
+            pmMainView.focus = true
             clocker.start()
             textArea.textEdit.text = load(fileDialog.currentFile)
         }

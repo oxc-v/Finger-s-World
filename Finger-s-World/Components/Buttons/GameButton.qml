@@ -17,8 +17,8 @@ Item {
         id: rec
         anchors.fill: parent
         radius: parent.height / 2.0
-        color: mouseHover.hovered ? "#ff9d20" : "#23bf76"
-
+        color: mouseHover.hovered ? "#849DFF" : "#23bf76"
+        scale: mouseHover.hovered ? 1.1 : 1
         Text {
             id: txt
             anchors.fill: parent

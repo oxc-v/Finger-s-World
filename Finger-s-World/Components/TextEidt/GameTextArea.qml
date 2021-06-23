@@ -32,8 +32,8 @@ Rectangle {
         TextEdit {
             id: textEdit
             width: flick.width
-            font.letterSpacing: 18
-            font.wordSpacing: 2
+            font.letterSpacing: 5
+            font.wordSpacing: 5
             font.pixelSize: 30
             readOnly: true
             cursorVisible: text.length === 0 ? false : true
@@ -44,7 +44,7 @@ Rectangle {
                 id: oxc
                 height: 1
                 opacity: 0.5
-                width: 30
+                width: 20
                 radius: 5
                 color: "#3395db"
             }
