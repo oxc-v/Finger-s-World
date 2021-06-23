@@ -107,7 +107,14 @@ Item {
 
     /// 监听键盘事件
     Keys.onPressed: (event) => {
-        if (event.text === textArea.textEdit.getText(index, index + 1)) {
+        var str = textArea.textEdit.getText(index, index + 1)
+        if (str === "\n" || str === "\r") {
+            if (event.key === Qt.Key_Enter
+                || event.key === Qt.Key_Return) {
+                index++
+                textArea.textEdit.select(0, index)
+            }
+        } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             index++
             textArea.textEdit.select(0, index)
         } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {

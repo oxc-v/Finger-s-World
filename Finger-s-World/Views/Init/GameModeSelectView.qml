@@ -18,7 +18,8 @@ Item {
     property Window window
     property StackView view
 
-    signal goEMView
+    signal goEMPlayMethodView(string viewUrl)
+    signal goSMTimeSelectionView(string viewUrl)
 
     ColumnLayout {
         anchors.fill: parent
@@ -56,11 +57,17 @@ Item {
                 GameButton {
                     text: qsTr("娱乐模式")
                     onPressed: {
-                        dialog.goEMView()
+                        dialog.goEMPlayMethodView("qrc:/Views/EntertainmentMode/EMPlayMethodView.qml")
                         dialog.destroy()
                     }
                 }
-                GameButton { text: qsTr("测试模式") }
+                GameButton {
+                    text: qsTr("测速模式")
+                    onPressed: {
+                        dialog.goSMTimeSelectionView("qrc:/Views/SpeedMode/SMTimeSelectionView.qml")
+                        dialog.destroy()
+                    }
+                }
                 GameButton {
                     text: qsTr("退出游戏")
                     onPressed: window.close()

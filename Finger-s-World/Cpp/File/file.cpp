@@ -25,7 +25,17 @@ QString File::load(QUrl filePath)
     for(int i = 0; i < text.size(); i++) {
         QChar ch = text.at(i);
         ushort uNum = ch.unicode();
-        if(uNum >= 0x4E00 && uNum <= 0x9FA5)
+        if((uNum >= 0x4E00 && uNum <= 0x9FA5) ||
+            QString(ch) == "？" ||
+            QString(ch) == "、" ||
+            QString(ch) == "》" ||
+            QString(ch) == "《" ||
+            QString(ch) == "。" ||
+            QString(ch) == "，" ||
+            QString(ch) == "】" ||
+            QString(ch) == "【" ||
+            QString(ch) == "—"  ||
+            QString(ch) == "——" )
             return QString();
     }
 

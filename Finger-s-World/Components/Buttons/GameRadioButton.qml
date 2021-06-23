@@ -9,6 +9,7 @@ Item {
 
     property alias checked: control.checked
     property alias text: control.text
+    property alias font: txt.font
     property alias rabtn: control
 
     RadioButton {
@@ -35,6 +36,7 @@ Item {
         }
 
         contentItem: Text {
+            id: txt
             anchors.centerIn: parent
             text: control.text
             font.pointSize: 12

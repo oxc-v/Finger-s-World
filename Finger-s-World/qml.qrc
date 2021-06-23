@@ -18,5 +18,8 @@
         <file>Views/PracticeMode/PMMainView.qml</file>
         <file>Components/TextEidt/GameTextArea.qml</file>
         <file>Views/PracticeMode/PMDialogs.qml</file>
+        <file>Views/SpeedMode/SMTimeSelectionView.qml</file>
+        <file>Views/SpeedMode/SMMainView.qml</file>
+        <file>Views/SpeedMode/SMDialogs.qml</file>
     </qresource>
 </RCC>

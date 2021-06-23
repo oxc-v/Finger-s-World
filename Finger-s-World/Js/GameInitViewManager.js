@@ -31,20 +31,22 @@ function createGameModeSelectView()
                         {window: window, view: view}
                     )
     if (incubator.status === Component.Ready) {
-        incubator.object.goEMView.connect(createEMPlayMethodView)
+        incubator.object.goEMPlayMethodView.connect(createOtherView)
+        incubator.object.goSMTimeSelectionView.connect(createOtherView)
     } else {
         incubator.onStatusChanged = function(status) {
             if (status === Component.Ready) {
-                incubator.object.goEMView.connect(createEMPlayMethodView)
+                incubator.object.goEMPlayMethodView.connect(createOtherView)
+                incubator.object.goSMTimeSelectionView.connect(createOtherView)
             }
         }
     }
 }
 
-/// 创建娱乐模式对话框
-function createEMPlayMethodView()
+/// 创建其他模式对话框
+function createOtherView(viewUrl)
 {
-    var incubator = createComponent("qrc:/Views/EntertainmentMode/EMPlayMethodView.qml",
+    var incubator = createComponent(viewUrl,
                                     begin,
                                     {view: view}
                                    )

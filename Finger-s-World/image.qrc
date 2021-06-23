@@ -80,5 +80,8 @@
         <file>Images/KeyImages/Other/space.png</file>
         <file>Images/Icon/exit.png</file>
         <file>Images/Icon/add.png</file>
+        <file>Images/GameTitle/title5.png</file>
+        <file>Images/Sprite/countDown.png</file>
+        <file>Images/KeyImages/Other/enter.png</file>
     </qresource>
 </RCC>

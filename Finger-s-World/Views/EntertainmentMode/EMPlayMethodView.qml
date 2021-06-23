@@ -93,10 +93,13 @@ Item {
 
                 /// 按钮
                 RowLayout {
-                    spacing: 20
+                    spacing: 80
                     Layout.fillWidth: true
-                    Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
+                    Layout.alignment: Qt.AlignCenter
                     GameButton {
+                        height: 60
+                        width: 130
+                        radius: 30
                         text: qsTr("返回")
                         onPressed: {
                             dialog.goGameModeSelectView()
@@ -104,6 +107,9 @@ Item {
                         }
                     }
                     GameButton {
+                        height: 60
+                        width: 130
+                        radius: 30
                         text: qsTr("开始")
                         onPressed: view.push(game_amusement_view)
                     }

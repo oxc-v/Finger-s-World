@@ -1,5 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>WordLists/TeachingMode/list1.txt</file>
+        <file>WordLists/SpeedMode/list1.txt</file>
+        <file>WordLists/SpeedMode/list2.txt</file>
+        <file>WordLists/SpeedMode/list3.txt</file>
+        <file>WordLists/SpeedMode/list4.txt</file>
     </qresource>
 </RCC>

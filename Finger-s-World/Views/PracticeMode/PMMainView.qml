@@ -70,7 +70,7 @@ Item {
         view: pmMainView.view
         finishTime: Tool.toTime(second)
         finishNumber: textArea.textEdit.text.length
-        finishAccuracy: (1 - errorNumbers / textArea.textEdit.text.length).toFixed(2) * 100 + "%"
+        finishAccuracy: (1 - (errorNumbers / textArea.textEdit.text.length).toFixed(2)) * 100 + "%"
 
         fileDialog.onAccepted: {
             pmMainView.focus = true
@@ -130,13 +130,18 @@ Item {
 
     /// 监听键盘事件
     Keys.onPressed: (event) => {
-        if (event.text === textArea.textEdit.getText(index, index + 1)) {
+        var str = textArea.textEdit.getText(index, index + 1)
+        if (str === "\n" || str === "\r") {
+            if (event.key === Qt.Key_Enter
+                || event.key === Qt.Key_Return) {
+                index++
+                textArea.textEdit.select(0, index)
+            }
+        } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             index++
             textArea.textEdit.select(0, index)
-        } else if (event.key !== Qt.Key_Shift &&
-                   event.key !== Qt.Key_CapsLock &&
-                   textArea.textEdit.text.length !== 0) {
-            errorNumbers++;
+        } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {
+            errorNumbers++
             textArea.border.color = "red"
             shake.start()
         }

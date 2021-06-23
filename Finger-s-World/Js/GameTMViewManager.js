@@ -56,7 +56,8 @@ var urlDict = {"a" : "qrc:/Images/KeyImages/LowerCase/a.png",
                "." : "qrc:/Images/KeyImages/Other/period.png",
                "/" : "qrc:/Images/KeyImages/Other/slash.png",
                " " : "qrc:/Images/KeyImages/Other/space.png",
-               "?" : "qrc:/Images/KeyImages/Other/question.png"
+               "?" : "qrc:/Images/KeyImages/Other/question.png",
+               "\n": "qrc:/Images/KeyImages/Other/enter.png"
               }
 
 /// 根据字母获取图片URL
