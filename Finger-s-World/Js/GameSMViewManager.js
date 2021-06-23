@@ -5,6 +5,7 @@ var fileUrl = [":/WordLists/SpeedMode/list1.txt",
               ]
 
 function initSMMainVeiw() {
+    smMainView.forceActiveFocus()
     textArea.textEdit.clear()
     textArea.textEdit.text = load(fileUrl[randomNum(0, fileUrl.length - 1)])
     smMainView.index = 0

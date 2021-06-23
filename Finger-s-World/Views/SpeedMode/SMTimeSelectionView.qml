@@ -58,17 +58,17 @@ Item {
                     GameRadioButton {
                         id: one
                         text: qsTr("1:00")
-                        font.pixelSize: 20
+                        font.pointSize: 20
                     }
                     GameRadioButton {
                         id: three
                         text: qsTr("3:00")
-                        font.pixelSize: 20
+                        font.pointSize: 20
                     }
                     GameRadioButton {
                         id: five
                         text: qsTr("5:00")
-                        font.pixelSize: 20
+                        font.pointSize: 20
                     }
                 }
 
