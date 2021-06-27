@@ -38,6 +38,15 @@ Item {
             }
         }
 
+        exit: Transition {
+            NumberAnimation {
+                property: "y"
+                to: Screen.height
+                easing.type: Easing.InOutBack
+                duration: 300
+            }
+        }
+
         ColumnLayout {
             anchors.fill: parent
             spacing: 20

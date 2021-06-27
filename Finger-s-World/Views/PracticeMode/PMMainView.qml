@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.12
+import QtMultimedia 5.15
 
 import "../../Components/TextEidt"
 import "../../Js/ToolFunc.js" as Tool
@@ -12,6 +13,7 @@ Item {
     property int index: 0
     property int second: 0
     property int errorNumbers: 0
+    property bool keys_enabled: false
 
     ColumnLayout {
         anchors.fill: parent
@@ -76,6 +78,7 @@ Item {
             pmMainView.focus = true
             clocker.start()
             textArea.textEdit.text = load(fileDialog.fileUrl)
+            keys_enabled = true
         }
 
         Component.onCompleted: againPratice.connect(Manager.initPMView)
@@ -128,7 +131,18 @@ Item {
     /// 组件初始化
     Component.onCompleted: forceActiveFocus()
 
+    /// 打字音效
+    SoundEffect {
+        id: type_error
+        source: "qrc:/Music/type_error.wav"
+    }
+    SoundEffect {
+        id: type_correct
+        source: "qrc:/Music/type_correct.wav"
+    }
+
     /// 监听键盘事件
+    Keys.enabled: keys_enabled
     Keys.onPressed: (event) => {
         var str = textArea.textEdit.getText(index, index + 1)
         if (str === "\n" || str === "\r") {
@@ -137,13 +151,16 @@ Item {
                 index++
                 textArea.textEdit.select(0, index)
             }
+            type_correct.play()
         } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             index++
             textArea.textEdit.select(0, index)
+            type_correct.play()
         } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {
             errorNumbers++
             textArea.border.color = "red"
             shake.start()
+            type_error.play()
         }
     }
 }

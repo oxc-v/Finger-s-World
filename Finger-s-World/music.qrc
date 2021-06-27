@@ -1,2 +1,12 @@
-<!DOCTYPE RCC>
-<RCC version="1.0"/>
+<RCC>
+    <qresource prefix="/">
+        <file>Music/bomb.wav</file>
+        <file>Music/type_correct.wav</file>
+        <file>Music/type_error.wav</file>
+        <file>Music/cut_view.wav</file>
+        <file>Music/EM_background_music.wav</file>
+        <file>Music/Init_background_music.wav</file>
+        <file>Music/SM_background_music.wav</file>
+        <file>Music/TM_background_music.wav</file>
+    </qresource>
+</RCC>

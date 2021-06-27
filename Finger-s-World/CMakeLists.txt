@@ -37,6 +37,7 @@ set(PROJECT_SOURCES
         file.qrc
         music.qrc
 )
+qt5_add_big_resources(PROJECT_SOURCES music.qrc)
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Finger-s-World

@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Particles 2.15
 import QtQuick.Window 2.15
+import QtMultimedia 5.15
 
 Item {
     id: word_item
@@ -16,6 +17,7 @@ Item {
 
     /// 开始销毁组件
     function startDestroyComponent() {
+        bomb.play()
         animation.stop()
         rec.opacity = 0
         burstEmitter.burst(100)
@@ -40,8 +42,9 @@ Item {
     }
 
     /// 组件下落动画
-    NumberAnimation on y {
+    YAnimator on y {
         id: animation
+        from: -word_item.height
         to: Screen.height
         duration: 6000
     }
@@ -67,11 +70,11 @@ Item {
             id: burstEmitter
             anchors.centerIn: parent
             group: "stage"
-            lifeSpan: 1000
+            lifeSpan: 700
             size: 50; endSize: 15; sizeVariation:10
             enabled: false
             velocity: CumulativeDirection {
-                AngleDirection {angleVariation: 360; magnitudeVariation: 360;}
+                AngleDirection {angleVariation: 360; magnitudeVariation: 260;}
             }
         }
     }
@@ -83,11 +86,17 @@ Item {
         onTriggered: word_item.destroy()
     }
 
+    /// 组件销毁音效
+    SoundEffect {
+        id: bomb
+        source: "qrc:/Music/bomb.wav"
+    }
+
     /// 当组件超出屏幕时销毁组件
     onYChanged: {
         if (word_item.y === Screen.height) {
             word_item.outOfRange(word_item)
-            word_item.destroy()
+            startDestroyComponent()
         }
     }
 }

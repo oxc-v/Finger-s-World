@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Window 2.15
+import QtMultimedia 5.15
 
 import "./Views/Init"
 
@@ -35,5 +36,27 @@ Window {
             id: popEnter
             NumberAnimation { property: "y";  to: 0; duration: 600; easing.type: Easing.OutBack}
         }
+
+        /// 音效控制
+        onDepthChanged: {
+            cut_view.play()
+            if (depth != 1)
+                background_music.stop()
+            else
+                background_music.play()
+        }
+    }
+
+    /// 背景音效
+    SoundEffect {
+        id: background_music
+        source: "qrc:/Music/Init_background_music.wav"
+        loops: SoundEffect.Infinite
+    }
+
+    /// 页面切换音效
+    SoundEffect {
+        id: cut_view
+        source: "qrc:/Music/cut_view.wav"
     }
 }

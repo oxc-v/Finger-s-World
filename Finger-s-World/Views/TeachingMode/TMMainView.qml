@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.12
+import QtMultimedia 5.15
 
 import "../../Components/TextEidt"
 import "../../Js/GameTMViewManager.js" as Manager
@@ -99,10 +100,27 @@ Item {
 
     /// 组件初始化
     Component.onCompleted: {
+        background.play()
         forceActiveFocus()
         tmMainview.text = load(":/WordLists/TeachingMode/list1.txt")
         dialog.initTMMainView.connect(Manager.initTMMainVeiw)
         imageUrl = Manager.getImageUrl(textArea.textEdit.getText(0, 1))
+    }
+
+    /// 打字音效
+    SoundEffect {
+        id: type_error
+        source: "qrc:/Music/type_error.wav"
+    }
+    SoundEffect {
+        id: type_correct
+        source: "qrc:/Music/type_correct.wav"
+    }
+
+    /// 背景音效
+    SoundEffect {
+        id: background
+        source: "qrc:/Music/TM_background_music.wav"
     }
 
     /// 监听键盘事件
@@ -114,12 +132,15 @@ Item {
                 index++
                 textArea.textEdit.select(0, index)
             }
+            type_correct.play()
         } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             index++
             textArea.textEdit.select(0, index)
+            type_correct.play()
         } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {
             textArea.border.color = "red"
             shake.start()
+            type_error.play()
         }
     }
 }

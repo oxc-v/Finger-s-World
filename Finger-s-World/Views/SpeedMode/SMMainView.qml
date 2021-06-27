@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.12
+import QtMultimedia 5.15
 
 import "../../Components/TextEidt"
 import "../../Js/ToolFunc.js" as Tool
@@ -154,9 +155,27 @@ Item {
 
     /// 组件初始化
     Component.onCompleted: {
+        background.play()
         keyEnable = false
         smMainView.forceActiveFocus()
         textArea.textEdit.text = load(Manager.fileUrl[Manager.randomNum(0, Manager.fileUrl.length - 1)])
+    }
+
+    /// 打字音效
+    SoundEffect {
+        id: type_error
+        source: "qrc:/Music/type_error.wav"
+    }
+    SoundEffect {
+        id: type_correct
+        source: "qrc:/Music/type_correct.wav"
+    }
+
+    /// 背景音效
+    SoundEffect {
+        id: background
+        source: "qrc:/Music/SM_background_music.wav"
+        loops: SoundEffect.Infinite
     }
 
     /// 监听键盘事件
@@ -170,14 +189,17 @@ Item {
                 index++
                 textArea.textEdit.select(0, index)
             }
+            type_correct.play()
         } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             correctNumbers++
             index++
             textArea.textEdit.select(0, index)
+            type_correct.play()
         } else if (event.key !== Qt.Key_Shift && event.key !== Qt.Key_CapsLock) {
             errorNumbers++
             textArea.border.color = "red"
             shake.start()
+            type_error.play()
         }
     }
 }

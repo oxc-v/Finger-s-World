@@ -27,8 +27,6 @@ Item {
         onTriggered: Manager.createWhiteCloud()
     }
 
-
-
     /// 创建游戏模式选择对话框
-    Component.onCompleted: { Manager.createGameModeSelectView() }
+    Component.onCompleted: Manager.createGameModeSelectView()
 }

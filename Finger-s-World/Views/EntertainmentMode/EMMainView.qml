@@ -1,6 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Window 2.15
+import QtMultimedia 5.15
 
 import "../../Components/Buttons"
 import "../../Js/GameEMViewManager.js" as Manager
@@ -110,6 +111,9 @@ Item {
             default:
                 break
         }
+
+        /// 播放背景音效
+        background_music.play()
     }
 
     /// 分数显示框
@@ -139,6 +143,13 @@ Item {
             againGame.connect(Manager.init)
             continueGame.connect(Manager.restartAllComponentAnimation)
         }
+    }
+
+    /// 背景音乐
+    SoundEffect {
+        id: background_music
+        source: "qrc:/Music/EM_background_music.wav"
+        loops: SoundEffect.Infinite
     }
 
     /// 监听键盘事件
