@@ -1,5 +1,6 @@
-import QtQuick
-import QtQuick.Particles
+import QtQuick 2.15
+import QtQuick.Particles 2.15
+import QtQuick.Window 2.15
 
 Item {
     id: word_item

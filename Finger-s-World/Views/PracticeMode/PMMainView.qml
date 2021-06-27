@@ -1,6 +1,6 @@
-import QtQuick
-import QtQuick.Controls
-import QtQuick.Layouts
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.12
 
 import "../../Components/TextEidt"
 import "../../Js/ToolFunc.js" as Tool
@@ -75,7 +75,7 @@ Item {
         fileDialog.onAccepted: {
             pmMainView.focus = true
             clocker.start()
-            textArea.textEdit.text = load(fileDialog.currentFile)
+            textArea.textEdit.text = load(fileDialog.fileUrl)
         }
 
         Component.onCompleted: againPratice.connect(Manager.initPMView)

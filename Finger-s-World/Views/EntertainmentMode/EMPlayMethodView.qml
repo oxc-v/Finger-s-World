@@ -1,8 +1,9 @@
 // 娱乐模式选择对话框
 
-import QtQuick
-import QtQuick.Controls
-import QtQuick.Layouts
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.12
+import QtQuick.Window 2.15
 
 import "../../Components/Buttons"
 

@@ -1,7 +1,7 @@
 // 游戏单选框
 
-import QtQuick
-import QtQuick.Controls
+import QtQuick 2.15
+import QtQuick.Controls 2.15
 
 Item {
     implicitHeight: 20

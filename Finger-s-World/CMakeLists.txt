@@ -35,6 +35,7 @@ set(PROJECT_SOURCES
         image.qrc
         js.qrc
         file.qrc
+        music.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

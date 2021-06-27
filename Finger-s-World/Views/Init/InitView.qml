@@ -1,6 +1,7 @@
-import QtQuick
-import QtQuick.Controls
-import QtQuick.Layouts
+import QtQuick 2.15
+import QtQuick.Controls 2.15
+import QtQuick.Window 2.15
+import QtQuick.Layouts 1.12
 
 import "../../Js/GameInitViewManager.js" as Manager
 
@@ -23,8 +24,10 @@ Item {
         running: true
         repeat: true
         triggeredOnStart: true
-        onTriggered: Manager.createWhiteCloud();
+        onTriggered: Manager.createWhiteCloud()
     }
+
+
 
     /// 创建游戏模式选择对话框
     Component.onCompleted: { Manager.createGameModeSelectView() }
