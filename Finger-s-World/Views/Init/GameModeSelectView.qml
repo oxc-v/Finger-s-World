@@ -11,8 +11,8 @@ import "../PracticeMode"
 
 Item {
     id: dialog
-    implicitHeight: 680
-    implicitWidth: 550
+    implicitHeight: 620
+    implicitWidth: 470
     y: -Screen.height
     x: Screen.width / 2.0 - width / 2.0
 

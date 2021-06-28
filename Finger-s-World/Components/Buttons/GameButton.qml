@@ -2,8 +2,8 @@ import QtQuick 2.15
 
 Item {
     id: btn
-    height: 80
-    width: 200
+    height: 70
+    width: 180
 
     property alias text: txt.text
     property alias font: txt.font
