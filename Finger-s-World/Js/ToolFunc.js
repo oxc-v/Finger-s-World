@@ -15,4 +15,3 @@ function toTime(s){
     }
     return time;
 }
-

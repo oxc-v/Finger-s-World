@@ -83,5 +83,6 @@
         <file>Images/GameTitle/title5.png</file>
         <file>Images/Sprite/countDown.png</file>
         <file>Images/KeyImages/Other/enter.png</file>
+        <file>Images/Word/balloon.png</file>
     </qresource>
 </RCC>

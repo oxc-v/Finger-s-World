@@ -6,8 +6,7 @@ import QtMultimedia 5.15
 Item {
     id: word_item
     implicitWidth: Screen.width / 13
-    implicitHeight: implicitWidth
-    y: -implicitHeight
+    implicitHeight: 100
 
     signal outOfRange(var item)
 
@@ -24,28 +23,26 @@ Item {
         timer.start()
     }
 
-    Rectangle {
+    Image {
         id: rec
         anchors.fill: parent
-        radius: parent.width / 2
-        color: "#23bf76"
-
+        source: "qrc:/Images/Word/balloon.png"
         Text {
             id: txt
             anchors.fill: parent
             color: "#ffffff"
             font.bold: true
-            font.pointSize: 50
+            font.pointSize: 30
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
     }
 
-    /// 组件下落动画
+    /// 组件上升动画
     YAnimator on y {
         id: animation
-        from: -word_item.height
-        to: Screen.height
+        from: Screen.height
+        to: -word_item.height
         duration: 6000
     }
 
@@ -71,7 +68,7 @@ Item {
             anchors.centerIn: parent
             group: "stage"
             lifeSpan: 700
-            size: 50; endSize: 15; sizeVariation:10
+            size: 30; endSize: 0; sizeVariation:10
             enabled: false
             velocity: CumulativeDirection {
                 AngleDirection {angleVariation: 360; magnitudeVariation: 260;}
@@ -94,7 +91,7 @@ Item {
 
     /// 当组件超出屏幕时销毁组件
     onYChanged: {
-        if (word_item.y === Screen.height) {
+        if (word_item.y === -word_item.height) {
             word_item.outOfRange(word_item)
             startDestroyComponent()
         }
