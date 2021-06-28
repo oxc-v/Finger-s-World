@@ -8,5 +8,6 @@
         <file>Music/Init_background_music.wav</file>
         <file>Music/SM_background_music.wav</file>
         <file>Music/TM_background_music.wav</file>
+        <file>Music/count_down.wav</file>
     </qresource>
 </RCC>

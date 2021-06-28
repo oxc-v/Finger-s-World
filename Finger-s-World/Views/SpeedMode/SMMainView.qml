@@ -38,6 +38,7 @@ Item {
 
             HoverHandler {id: hoverBack}
             onPressed: view.pop()
+
         }
 
         /// 时间进度条
@@ -117,10 +118,10 @@ Item {
         from: 100
         to: 0
         duration: testTime * 1000
-
         onFinished: {
             keyEnable = false
             dialogs.openFinishDialog()
+            background.stop()
         }
     }
 
@@ -128,7 +129,6 @@ Item {
     AnimatedSprite {
         id: spriteAnim
         anchors.centerIn: parent
-        running: true
         source: "qrc:/Images/Sprite/countDown.png"
         frameWidth: 400
         frameHeight: 400
@@ -137,6 +137,10 @@ Item {
         loops: 1
         interpolate: false
         finishBehavior: AnimatedSprite.FinishAtFinalFrame
+        onRunningChanged: {
+            if (running == true)
+                start_count_down.play()
+        }
         onFinished: {
             opacity = 0
             keyEnable = true
@@ -155,7 +159,7 @@ Item {
 
     /// 组件初始化
     Component.onCompleted: {
-        background.play()
+        spriteAnim.start()
         keyEnable = false
         smMainView.forceActiveFocus()
         textArea.textEdit.text = load(Manager.fileUrl[Manager.randomNum(0, Manager.fileUrl.length - 1)])
@@ -176,6 +180,16 @@ Item {
         id: background
         source: "qrc:/Music/SM_background_music.wav"
         loops: SoundEffect.Infinite
+    }
+
+    /// 开始倒计时音效
+    SoundEffect {
+        id: start_count_down
+        source: "qrc:/Music/count_down.wav"
+        onPlayingChanged: {
+            if (playing === false)
+                background.play()
+        }
     }
 
     /// 监听键盘事件
