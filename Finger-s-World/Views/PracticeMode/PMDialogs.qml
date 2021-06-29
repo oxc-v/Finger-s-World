@@ -1,14 +1,14 @@
 import QtQuick 2.15
-import QtQuick.Controls 2.15
+import QtQuick.Controls 2.15 as QQC
 import QtQuick.Layouts 1.12
-import QtQuick.Dialogs 1.3 as QQD
+import QtQuick.Dialogs 1.3
 import QtQuick.Window 2.15
 
 import "../../Components/Buttons"
 
 Item {
     id: pmDialogs
-    property StackView view
+    property QQC.StackView view
 
     property alias fileDialog: file
 
@@ -22,7 +22,7 @@ Item {
     signal againPratice
 
     /// 文件对话框
-    QQD.FileDialog {
+    FileDialog {
         id: file
         title: "选择文件"
         folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
@@ -30,7 +30,7 @@ Item {
     }
 
     /// 练字结束对话框
-    Dialog {
+    QQC.Dialog {
         id: finish
         width: 350
         height: 350
@@ -49,7 +49,7 @@ Item {
         contentItem: ColumnLayout {
             RowLayout {
                 Layout.alignment: Qt.AlignCenter
-                Label {
+                QQC.Label {
                     text: qsTr("时间")
                     font {
                         letterSpacing: 5
@@ -57,7 +57,7 @@ Item {
                     }
                     color: "#99caed"
                 }
-                Label {
+                QQC.Label {
                     id: time
                     font {
                         letterSpacing: 5
@@ -68,7 +68,7 @@ Item {
             }
             RowLayout {
                 Layout.alignment: Qt.AlignCenter
-                Label {
+                QQC.Label {
                     text: qsTr("单词")
                     font {
                         letterSpacing: 5
@@ -76,7 +76,7 @@ Item {
                     }
                     color: "#99caed"
                 }
-                Label {
+                QQC.Label {
                     id: number
                     font {
                         letterSpacing: 5
@@ -87,7 +87,7 @@ Item {
             }
             RowLayout {
                 Layout.alignment: Qt.AlignCenter
-                Label {
+                QQC.Label {
                     text: qsTr("正确率")
                     font {
                         letterSpacing: 5
@@ -95,7 +95,7 @@ Item {
                     }
                     color: "#99caed"
                 }
-                Label {
+                QQC.Label {
                     id: accuracy
                     font {
                         letterSpacing: 5
@@ -157,6 +157,6 @@ Item {
             }
         }
 
-        closePolicy: Popup.NoAutoClose
+        closePolicy: QQC.Popup.NoAutoClose
     }
 }

@@ -80,13 +80,17 @@ Item {
     /// 新手教学页面
     Component {
         id: tmMainView
-        TMMainView { view: dialog.view }
+        TMMainView {
+            view: dialog.view
+        }
     }
 
     /// 练习模式页面
     Component {
         id: pmMainView
-        PMMainView { view: dialog.view }
+        PMMainView {
+            view: dialog.view
+        }
     }
 
     /// 对话框的出场效果

@@ -196,15 +196,7 @@ Item {
     Keys.enabled: keyEnable
     Keys.onPressed: (event) => {
         var str = textArea.textEdit.getText(index, index + 1)
-        if (str === "\n" || str === "\r") {
-            if (event.key === Qt.Key_Enter
-                || event.key === Qt.Key_Return) {
-                correctNumbers++
-                index++
-                textArea.textEdit.select(0, index)
-            }
-            type_correct.play()
-        } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
+        if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             correctNumbers++
             index++
             textArea.textEdit.select(0, index)

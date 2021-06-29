@@ -9,7 +9,9 @@ import "../../Js/GamePMViewManager.js" as Manager
 
 Item {
     id: pmMainView
+
     property StackView view
+
     property int index: 0
     property int second: 0
     property int errorNumbers: 0
@@ -75,6 +77,7 @@ Item {
         finishAccuracy: (1 - (errorNumbers / textArea.textEdit.text.length).toFixed(2)) * 100 + "%"
 
         fileDialog.onAccepted: {
+            Manager.initPMView()
             pmMainView.focus = true
             clocker.start()
             textArea.textEdit.text = load(fileDialog.fileUrl)
@@ -122,7 +125,7 @@ Item {
 
     /// 监听索引值的改变
     onIndexChanged: {
-        if (index === textArea.textEdit.text.length) {
+        if (index === textArea.textEdit.text.length && index != 0) {
             clocker.stop()
             dialogs.openFinishDialog()
         }
@@ -145,14 +148,7 @@ Item {
     Keys.enabled: keys_enabled
     Keys.onPressed: (event) => {
         var str = textArea.textEdit.getText(index, index + 1)
-        if (str === "\n" || str === "\r") {
-            if (event.key === Qt.Key_Enter
-                || event.key === Qt.Key_Return) {
-                index++
-                textArea.textEdit.select(0, index)
-            }
-            type_correct.play()
-        } else if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
+        if ((event.text === str) || (str === "\n" && (event.key === Qt.Key_Enter || event.key === Qt.Key_Return))) {
             index++
             textArea.textEdit.select(0, index)
             type_correct.play()
