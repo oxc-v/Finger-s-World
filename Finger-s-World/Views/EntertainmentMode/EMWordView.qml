@@ -6,7 +6,7 @@ import QtMultimedia 5.15
 Item {
     id: word_item
     implicitWidth: Screen.width / 13
-    implicitHeight: 100
+    implicitHeight: width * 1.2
 
     signal outOfRange(var item)
 
