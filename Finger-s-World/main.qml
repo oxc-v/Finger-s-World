@@ -19,8 +19,8 @@ Window {
         pushEnter: Transition {
             id: pushEnter
             SequentialAnimation {
-                PropertyAction { property: "x"; value: stack_view.width}
-                NumberAnimation { property: "x";  to: 0; duration: 600; easing.type: Easing.OutBack }
+                PropertyAction { property: "x"; value: stack_view.width }
+                NumberAnimation { property: "x";  to: 0; duration: 300; easing.type: Easing.OutQuad }
             }
         }
         popExit: Transition {
@@ -34,7 +34,7 @@ Window {
         }
         popEnter: Transition {
             id: popEnter
-            NumberAnimation { property: "y";  to: 0; duration: 600; easing.type: Easing.OutBack}
+            NumberAnimation { property: "y";  to: 0; duration: 300; easing.type: Easing.OutQuad }
         }
 
         /// 音效控制
