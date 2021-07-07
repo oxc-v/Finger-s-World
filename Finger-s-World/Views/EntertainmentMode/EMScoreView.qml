@@ -1,8 +1,8 @@
 // 娱乐模式的分数显示框
 
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.12
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
 Item {
     implicitHeight: 150

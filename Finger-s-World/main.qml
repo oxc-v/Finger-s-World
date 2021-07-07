@@ -1,7 +1,7 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Window 2.15
-import QtMultimedia 5.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Window
+import QtMultimedia
 
 import "./Views/Init"
 
@@ -20,7 +20,7 @@ Window {
             id: pushEnter
             SequentialAnimation {
                 PropertyAction { property: "x"; value: stack_view.width }
-                NumberAnimation { property: "x";  to: 0; duration: 300; easing.type: Easing.OutQuad }
+                NumberAnimation { property: "x";  to: 0; duration: 500; easing.type: Easing.OutBack }
             }
         }
         popExit: Transition {
@@ -34,7 +34,7 @@ Window {
         }
         popEnter: Transition {
             id: popEnter
-            NumberAnimation { property: "y";  to: 0; duration: 300; easing.type: Easing.OutQuad }
+            NumberAnimation { property: "y";  to: 0; duration: 500; easing.type: Easing.OutBack }
         }
 
         /// 音效控制

@@ -1,7 +1,7 @@
 // 云朵组件
 
-import QtQuick 2.15
-import QtQuick.Window 2.15
+import QtQuick
+import QtQuick.Window
 
 Item {
     implicitHeight: 100

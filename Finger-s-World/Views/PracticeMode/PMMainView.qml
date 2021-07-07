@@ -1,7 +1,7 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.12
-import QtMultimedia 5.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import QtMultimedia
 
 import "../../Components/TextEidt"
 import "../../Js/ToolFunc.js" as Tool
@@ -80,7 +80,7 @@ Item {
             Manager.initPMView()
             pmMainView.focus = true
             clocker.start()
-            textArea.textEdit.text = load(fileDialog.fileUrl)
+            textArea.textEdit.text = load(fileDialog.file)
             keys_enabled = true
         }
 

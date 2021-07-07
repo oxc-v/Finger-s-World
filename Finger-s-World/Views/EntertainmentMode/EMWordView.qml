@@ -1,7 +1,7 @@
-import QtQuick 2.15
-import QtQuick.Particles 2.15
-import QtQuick.Window 2.15
-import QtMultimedia 5.15
+import QtQuick
+import QtQuick.Particles
+import QtQuick.Window
+import QtMultimedia
 
 Item {
     id: word_item
@@ -32,7 +32,7 @@ Item {
             anchors.fill: parent
             color: "#ffffff"
             font.bold: true
-            font.pointSize: 30
+            font.pixelSize: 45
             verticalAlignment: Text.AlignVCenter
             horizontalAlignment: Text.AlignHCenter
         }
@@ -91,7 +91,8 @@ Item {
 
     /// 当组件超出屏幕时销毁组件
     onYChanged: {
-        if (word_item.y === -word_item.height) {
+        console.log(word_item.y, word_item.height)
+        if (Math.abs(word_item.y + word_item.height) <= 0.0001) {
             word_item.outOfRange(word_item)
             startDestroyComponent()
         }

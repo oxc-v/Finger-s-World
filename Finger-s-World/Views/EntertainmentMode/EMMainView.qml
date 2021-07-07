@@ -1,7 +1,7 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Window 2.15
-import QtMultimedia 5.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Window
+import QtMultimedia
 
 import "../../Components/Buttons"
 import "../../Js/GameEMViewManager.js" as Manager

@@ -43,3 +43,4 @@ QString File::load(QUrl filePath)
 
     return text;
 }
+
