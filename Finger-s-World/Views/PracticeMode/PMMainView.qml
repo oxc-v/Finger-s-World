@@ -41,7 +41,12 @@ Item {
                 icon.color: "#ffffff"
 
                 HoverHandler {id: hoverAdd}
-                onPressed: dialogs.openFileDialog()
+                onPressed: {
+                    if (Qt.platform.os  === "linux")
+                        dialogs.openFileDialog2()
+                    else
+                        dialogs.openFileDialog()
+                }
             }
 
             /// 返回按钮
@@ -81,6 +86,14 @@ Item {
             pmMainView.focus = true
             clocker.start()
             textArea.textEdit.text = load(fileDialog.file)
+            keys_enabled = true
+        }
+
+        fileDialog2.onAccepted: {
+            Manager.initPMView()
+            pmMainView.focus = true
+            clocker.start()
+            textArea.textEdit.text = load(fileDialog2.file)
             keys_enabled = true
         }
 

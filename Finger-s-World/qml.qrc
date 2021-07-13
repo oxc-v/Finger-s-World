@@ -21,5 +21,6 @@
         <file>Views/SpeedMode/SMTimeSelectionView.qml</file>
         <file>Views/SpeedMode/SMMainView.qml</file>
         <file>Views/SpeedMode/SMDialogs.qml</file>
+        <file>Components/FileDialog/MyFileDialog.qml</file>
     </qresource>
 </RCC>

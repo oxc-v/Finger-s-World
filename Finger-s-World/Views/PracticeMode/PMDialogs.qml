@@ -5,18 +5,21 @@ import Qt.labs.platform as QLP
 import QtQuick.Window
 
 import "../../Components/Buttons"
+import "../../Components/FileDialog"
 
 Item {
     id: pmDialogs
     property StackView view
 
     property alias fileDialog: file
+    property alias fileDialog2: file2
 
     property alias finishTime: time.text
     property alias finishNumber: number.text
     property alias finishAccuracy: accuracy.text
 
     function openFileDialog() { file.open() }
+    function openFileDialog2() { file2.open() }
     function openFinishDialog() { finish.open() }
 
     signal againPratice
@@ -24,9 +27,15 @@ Item {
     /// 文件对话框
     QLP.FileDialog {
         id: file
-        title: "选择文件"
+        title: qsTr("选择文件")
         folder: StandardPaths.writableLocation(StandardPaths.DocumentsLocation)
         nameFilters: [ "文本文件 (*.txt)", "所有文件 (*.*)" ]
+    }
+
+    // QLP.FileDialog只能在linux的GTK环境中使用
+    MyFileDialog {
+        id: file2
+        title: qsTr("选择文件")
     }
 
     /// 练字结束对话框

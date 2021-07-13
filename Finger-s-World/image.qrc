@@ -84,5 +84,7 @@
         <file>Images/Sprite/countDown.png</file>
         <file>Images/KeyImages/Other/enter.png</file>
         <file>Images/Word/balloon.png</file>
+        <file>Images/Icon/folder.png</file>
+        <file>Images/Icon/left.png</file>
     </qresource>
 </RCC>
