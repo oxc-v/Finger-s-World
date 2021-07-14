@@ -2,6 +2,8 @@
 function createComponent(view, parent, properties)
 {
     var component = Qt.createComponent(view)
+    if (component.status === Component.Null || component.status === Component.Error)
+        console.log(component.errorString())
     var incubator = component.incubateObject(parent, properties)
     return incubator
 }

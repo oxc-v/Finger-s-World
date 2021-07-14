@@ -4,6 +4,7 @@ import QtQuick.Window
 import QtMultimedia
 
 import "./Views/Init"
+import "./Views/PracticeMode"
 
 Window {
     id: window

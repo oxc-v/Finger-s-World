@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
+#include <QIcon>
 
 #include "./Cpp/File/file.h"
 
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
 #endif
 
     QGuiApplication app(argc, argv);
+    app.setWindowIcon(QIcon("qrc:/Icon.ico"));
 
     File file;
     QQmlApplicationEngine engine;

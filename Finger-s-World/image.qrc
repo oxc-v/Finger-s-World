@@ -86,5 +86,6 @@
         <file>Images/Word/balloon.png</file>
         <file>Images/Icon/folder.png</file>
         <file>Images/Icon/left.png</file>
+        <file>Icon.ico</file>
     </qresource>
 </RCC>
