@@ -46,8 +46,8 @@
 
 ###### **安装步骤**
 
-1. 下载[Qt installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)
-2. 使用[Qt installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)安装Qt6.2 Bate1 released或者更高的版本
+1. 下载[Qt Online Installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)
+2. 使用[Qt Online Installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)安装Qt6.2 Bate1 released或者更高的版本
 3. 添加Qt Multimedia模块
 4. 克隆项目代码
 ```sh
@@ -56,13 +56,13 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 
 ### 部署
 
-暂无
+本项目使用[Qt Installer Framework](https://doc.qt.io/qtinstallerframework/index.html)制作了Windows和Linux的安装包，感兴趣的朋友们可以下载安装。
 
 ### 使用到的框架
 
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
+- 开发框架[Qt6.2 Beta Released](https://getbootstrap.com)
+- Linux程序打包工具[CQtDeployer](https://github.com/QuasarApp/CQtDeployer)
+- Windows程序打包工具[WinDeployQt](https://doc.qt.io/qt-5/windows-deployment.html)
 
 ### 如何参与开源项目
 
