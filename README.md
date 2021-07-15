@@ -18,18 +18,13 @@
 
   <h3 align="center">指上谈兵</h3>
   <p align="center">
-    一个基于“Qt6 Quick”框架为基础开发的打字游戏
+    一个基于[Qt6 Quick](https://www.qt.io/product/develop-embedded-devices)框架为基础开发的打字游戏
     <br />
     <a href="https://github.com/oxc-v/Finger-s-World/tree/main/Finger-s-World"><strong>探索本项目的文档 »</strong></a>
   </p>
 </p>
  
 ## 目录
-
-
-
-
-
 
 - [上手指南](#上手指南)
   - [开发前的配置要求](#开发前的配置要求)
@@ -45,9 +40,7 @@
 
 ### 上手指南
 
-请将所有链接中的“shaojintian/Best_README_template”改为“your_github_name/your_repository”
-
-
+将项目源码克隆到本地，使用[Qt Creator](https://www.qt.io/product/development-tools)进行编译运行
 
 ###### 开发前的配置要求
 
