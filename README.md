@@ -60,21 +60,45 @@ eg:
 
 ```
 Finger-s-World
-├── Readme.md
 ├── LICENSE.txt
 ├── README.md
-├── /account/
-├── /bbs/
-├── /docs/
-│  ├── /rules/
+├── /Finger-s-World
+│  ├── Components
 │  │  ├── backend.txt
 │  │  └── frontend.txt
-├── manage.py
-├── /oa/
-├── /static/
-├── /templates/
-├── useless.md
-└── /util/
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── Images
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── Js
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── Music
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── Views
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── WordLists
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
+│  ├── CPP
+│  │  ├── backend.txt
+│  │  └── frontend.txt
 
 ```
 
