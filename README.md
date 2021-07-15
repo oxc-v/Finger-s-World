@@ -134,9 +134,9 @@ filetree
 
 ### 作者
 
-xxx@xxxx
+oxc
 
-知乎:xxxx  &ensp; qq:xxxxxx    
+邮箱:2392481156@qq.com  &ensp; qq:2392481156  
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
@@ -156,13 +156,13 @@ xxx@xxxx
 
 <!-- links -->
 [your-project-path]:https://github.com/oxc-v/Finger-s-World
-[contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square
+<!-- [contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square -->
 [contributors-url]: https://github.com/oxc-v/Finger-s-World/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square
+<!-- [forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square -->
 [forks-url]: https://github.com/oxc-v/Finger-s-World/network/members
-[stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square
+<!-- [stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square -->
 [stars-url]: https://github.com/oxc-v/Finger-s-World/stargazers
-[issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square
+<!-- [issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square -->
 [issues-url]: https://github.com/oxc-v/Finger-s-World/issues
-[license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square
+<!-- [license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square -->
 [license-url]: https://github.com/oxc-v/Finger-s-World/blob/main/LICENSE
