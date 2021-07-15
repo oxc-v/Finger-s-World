@@ -18,15 +18,11 @@
 
   <h3 align="center">指上谈兵</h3>
   <p align="center">
-    一个"完美的"README模板去快速开始你的项目！
+    一个基于“Qt6 Quick”框架为基础开发的打字游戏
     <br />
-    <a href="https://github.com/shaojintian/Best_README_template"><strong>探索本项目的文档 »</strong></a>
+    <a href="https://github.com/oxc-v/Finger-s-World/tree/main/Finger-s-World"><strong>探索本项目的文档 »</strong></a>
   </p>
-
 </p>
-
-
- 本篇README.md面向开发者
  
 ## 目录
 
@@ -41,7 +37,6 @@
   - [如何参与开源项目](#如何参与开源项目)
 - [版本控制](#版本控制)
 - [作者](#作者)
-- [鸣谢](#鸣谢)
 
 ### 上手指南
 
@@ -136,16 +131,6 @@ oxc
 ### 版权说明
 
 该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt)
-
-### 鸣谢
-
-
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
 
 <!-- links -->
 [your-project-path]:https://github.com/oxc-v/Finger-s-World
