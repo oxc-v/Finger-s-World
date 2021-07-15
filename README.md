@@ -69,6 +69,7 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 ### 界面展示
 
 - 主界面
+
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/0.png" alt="Logo" width="200" height="200">
 - 新手教学界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/1.png" alt="Logo" width="800" height="800">
