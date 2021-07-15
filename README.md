@@ -29,7 +29,6 @@
 - [上手指南](#上手指南)
   - [开发前的配置要求](#开发前的配置要求)
   - [安装步骤](#安装步骤)
-- [文件目录说明](#文件目录说明)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
@@ -43,8 +42,8 @@
 
 ###### 开发前的配置要求
 
-1. xxxxx x.x.x
-2. xxxxx x.x.x
+1. 安装Qt6.2 Bate1 released 或者更高的版本
+2. 在Qt6.2中添加Qt Multimedia模块
 
 ###### **安装步骤**
 
@@ -53,53 +52,6 @@
 
 ```sh
 git clone https://github.com/shaojintian/Best_README_template.git
-```
-
-### 文件目录说明
-eg:
-
-```
-Finger-s-World
-├── LICENSE.txt
-├── README.md
-├── /Finger-s-World
-│  ├── Components
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── Images
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── Js
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── Music
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── Views
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── WordLists
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-│  ├── CPP
-│  │  ├── backend.txt
-│  │  └── frontend.txt
-
 ```
 
 ### 部署
