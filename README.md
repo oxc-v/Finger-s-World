@@ -18,7 +18,7 @@
 
   <h3 align="center">指上谈兵</h3>
   <p align="center">
-    一个基于[Qt6 Quick](https://www.qt.io/product/develop-embedded-devices)框架为基础开发的打字游戏
+    一个基于<a href="https://www.qt.io/product/develop-embedded-devices"><strong>Qt6 Quick</strong></a>框架为基础开发的打字游戏
     <br />
     <a href="https://github.com/oxc-v/Finger-s-World/tree/main/Finger-s-World"><strong>探索本项目的文档 »</strong></a>
   </p>
@@ -30,7 +30,6 @@
   - [开发前的配置要求](#开发前的配置要求)
   - [安装步骤](#安装步骤)
 - [文件目录说明](#文件目录说明)
-- [开发的架构](#开发的架构)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
 - [贡献者](#贡献者)
@@ -60,8 +59,8 @@ git clone https://github.com/shaojintian/Best_README_template.git
 eg:
 
 ```
-filetree 
-├── ARCHITECTURE.md
+Finger-s-World
+├── Readme.md
 ├── LICENSE.txt
 ├── README.md
 ├── /account/
@@ -78,14 +77,6 @@ filetree
 └── /util/
 
 ```
-
-
-
-
-
-### 开发的架构 
-
-请阅读[ARCHITECTURE.md](https://github.com/shaojintian/Best_README_template/blob/master/ARCHITECTURE.md) 查阅为该项目的架构。
 
 ### 部署
 
