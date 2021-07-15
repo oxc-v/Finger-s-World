@@ -60,9 +60,10 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 
 ### 使用到的框架
 
-- 开发框架[Qt6.2 Beta Released](https://getbootstrap.com)
+- 开发框架[Qt6.2 Beta Released](https://www.qt.io/blog/qt-6.2-beta-released)
 - Linux程序打包工具[CQtDeployer](https://github.com/QuasarApp/CQtDeployer)
 - Windows程序打包工具[WinDeployQt](https://doc.qt.io/qt-5/windows-deployment.html)
+- 安装程序的制作[Qt Installer Framework](https://doc.qt.io/qtinstallerframework/index.html)
 
 ### 如何参与开源项目
 
