@@ -70,10 +70,9 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 
 - 主界面
 
-<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/0.png" alt="Logo" width="200" height="200">
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/0.png" alt="Logo" width="700" height="550">
 
 - 新手教学界面
-
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/1.png" alt="Logo" width="700" height="550">
 
 - 练习模式界面
