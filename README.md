@@ -73,16 +73,16 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 
 ### 界面展示
 
-##### 主界面
+###### 主界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/0.png" alt="Logo" width="200" height="200">
-##### 新手教学界面
+###### 新手教学界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/1.png" alt="Logo" width="500" height="500">
-##### 练习模式界面
+###### 练习模式界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/2.png" alt="Logo" width="200" height="200">
-##### 娱乐模式界面
+###### 娱乐模式界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/3-1.png" alt="Logo" width="200" height="200">
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/3-2.png" alt="Logo" width="200" height="200">
-##### 测速模式界面
+###### 测速模式界面
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/4-1.png" alt="Logo" width="200" height="200">
 <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/4-2.png" alt="Logo" width="200" height="200">
 
