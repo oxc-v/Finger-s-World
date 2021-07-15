@@ -42,16 +42,17 @@
 
 ###### 开发前的配置要求
 
-1. 安装Qt6.2 Bate1 released 或者更高的版本
-2. 在Qt6.2中添加Qt Multimedia模块
+1. Qt6.2 Bate1 released 或者更高的版本
+2. Qt Multimedia模块
 
 ###### **安装步骤**
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-
+1. 下载[Qt installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)
+2. 使用[Qt installer](https://mirrors.tuna.tsinghua.edu.cn/qt/official_releases/online_installers/)安装Qt6.2 Bate1 released或者更高的版本
+3. 添加Qt Multimedia模块
+4. 克隆项目代码
 ```sh
-git clone https://github.com/shaojintian/Best_README_template.git
+git clone https://github.com/oxc-v/Finger-s-World.git
 ```
 
 ### 部署
@@ -70,8 +71,7 @@ git clone https://github.com/shaojintian/Best_README_template.git
 
 #### 如何参与开源项目
 
-贡献使开源社区成为一个学习、激励和创造的绝佳场所。你所作的任何贡献都是**非常感谢**的。
-
+贡献使开源社区成为一个学习、激励和创造的绝佳场所。您所作的任何贡献都是**非常感谢**的。
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -79,23 +79,21 @@ git clone https://github.com/shaojintian/Best_README_template.git
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 ### 版本控制
 
-该项目使用Git进行版本管理。您可以在repository参看当前可用版本。
+本项目使用[Git](https://git-scm.com/)进行版本管理。您可以在仓库中参看当前可用版本。
 
 ### 作者
 
 oxc
 
-邮箱:2392481156@qq.com  &ensp; qq:2392481156  
+邮箱: 2392481156@qq.com  &ensp; qq: 2392481156  
 
  *您也可以在贡献者名单中参看所有参与该项目的开发者。*
 
 ### 版权说明
 
-该项目签署了MIT 授权许可，详情请参阅 [LICENSE.txt](https://github.com/shaojintian/Best_README_template/blob/master/LICENSE.txt)
+该项目签署了 GPL-3.0 授权许可，详情请参阅 [LICENSE.txt](https://github.com/oxc-v/Finger-s-World/blob/main/LICENSE)
 
 <!-- links -->
 [your-project-path]:https://github.com/oxc-v/Finger-s-World
