@@ -156,13 +156,13 @@ oxc
 
 <!-- links -->
 [your-project-path]:https://github.com/oxc-v/Finger-s-World
-<!-- [contributors-shield]: https://img.shields.io/github/contributors/shaojintian/Best_README_template.svg?style=flat-square -->
+[contributors-shield]: https://img.shields.io/github/contributors/oxc-v/Finger-s-World.svg?style=flat-square
 [contributors-url]: https://github.com/oxc-v/Finger-s-World/graphs/contributors
-<!-- [forks-shield]: https://img.shields.io/github/forks/shaojintian/Best_README_template.svg?style=flat-square -->
+[forks-shield]: https://img.shields.io/github/forks/oxc-v/Finger-s-World.svg?style=flat-square
 [forks-url]: https://github.com/oxc-v/Finger-s-World/network/members
-<!-- [stars-shield]: https://img.shields.io/github/stars/shaojintian/Best_README_template.svg?style=flat-square -->
+[stars-shield]: https://img.shields.io/github/stars/oxc-v/Finger-s-World.svg?style=flat-square
 [stars-url]: https://github.com/oxc-v/Finger-s-World/stargazers
-<!-- [issues-shield]: https://img.shields.io/github/issues/shaojintian/Best_README_template.svg?style=flat-square -->
+[issues-shield]: https://img.shields.io/github/issues/oxc-v/Finger-s-World.svg?style=flat-square
 [issues-url]: https://github.com/oxc-v/Finger-s-World/issues
-<!-- [license-shield]: https://img.shields.io/github/license/shaojintian/Best_README_template.svg?style=flat-square -->
+[license-shield]: https://img.shields.io/github/license/oxc-v/Finger-s-World.svg?style=flat-square
 [license-url]: https://github.com/oxc-v/Finger-s-World/blob/main/LICENSE
