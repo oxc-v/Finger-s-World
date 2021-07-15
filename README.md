@@ -12,7 +12,7 @@
 <br />
 
 <p align="center">
-  <a href="https://github.com/shaojintian/Best_README_template/">
+  <a href="https://github.com/oxc-v/Finger-s-World">
     <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/logo.png" alt="Logo" width="200" height="200">
   </a>
 
@@ -31,6 +31,12 @@
   - [安装步骤](#安装步骤)
 - [部署](#部署)
 - [使用到的框架](#使用到的框架)
+- [界面展示](#界面展示)
+  -[主界面](#主界面)
+  -[新手教学界面](#新手教学界面)
+  -[练习模式界面](#练习模式界面)
+  -[娱乐模式界面](#娱乐模式界面)
+  -[测速模式界面](#测速模式界面)
 - [如何参与开源项目](#如何参与开源项目)
 - [版本控制](#版本控制)
 - [作者](#作者)
@@ -64,6 +70,21 @@ git clone https://github.com/oxc-v/Finger-s-World.git
 - Linux程序打包工具 [CQtDeployer](https://github.com/QuasarApp/CQtDeployer)
 - Windows程序打包工具 [WinDeployQt](https://doc.qt.io/qt-5/windows-deployment.html)
 - 安装程序的制作 [Qt Installer Framework](https://doc.qt.io/qtinstallerframework/index.html)
+
+### 界面展示
+
+##### 主界面
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/0.png" alt="Logo" width="200" height="200">
+##### 新手教学界面
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/1.png" alt="Logo" width="500" height="500">
+##### 练习模式界面
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/2.png" alt="Logo" width="200" height="200">
+##### 娱乐模式界面
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/3-1.png" alt="Logo" width="200" height="200">
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/3-2.png" alt="Logo" width="200" height="200">
+##### 测速模式界面
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/4-1.png" alt="Logo" width="200" height="200">
+<img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/4-2.png" alt="Logo" width="200" height="200">
 
 ### 如何参与开源项目
 
