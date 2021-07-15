@@ -13,7 +13,7 @@
 
 <p align="center">
   <a href="https://github.com/shaojintian/Best_README_template/">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/oxc-v/Finger-s-World/blob/main/GitHubImages/logo.png" alt="Logo" width="200" height="200">
   </a>
 
   <h3 align="center">指上谈兵</h3>
